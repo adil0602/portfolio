@@ -1,0 +1,378 @@
+   
+    body {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+    }
+    header{
+        width: 100%;
+        position: fixed;
+        height: 50px;
+        display: flex;
+        flex-flow: row;
+        justify-content: space-around;
+        background: linear-gradient(skyblue, rgb(59, 59, 173));
+        
+    }
+    .headleft {
+        color: white;
+        padding-left: 10px;
+        margin-left: 30px;
+    }
+    
+    .headleft p {
+        text-transform: uppercase;
+        animation: leftright 2s linear infinite;
+        animation-direction: alternate;
+    }
+    
+    @keyframes leftright {
+        from {
+            padding-left: 40px;
+        }
+        to {
+            padding-right: 40px;
+        }
+    }
+    .headright{
+        display: flex;
+    }
+    .headright ul a{
+        text-decoration: none;
+        padding: 0px 10px;
+        list-style-type: none;
+        cursor: pointer;
+        color: rgb(12, 12, 12);
+    }
+    .headright a:hover{
+        color:rgb(21, 102, 207);
+
+    } 
+    main {
+        width: 95%;
+        height: 400px;
+        display: flex;
+        flex-flow: row;
+        justify-content: space-around;
+        align-items: center;
+        margin-left: 30px;
+        
+        
+    }
+    
+    .leftside {
+        margin-top: 100px;
+        height: 350px;
+        background: linear-gradient(to right, skyblue 20%, white 80%);
+        text-transform: uppercase;
+    }
+    
+    .leftside h2 {
+        margin-top: 30px;
+        font-size: 25px;
+        position: relative;
+    }
+    
+    .leftside h2:after {
+        content: "";
+        width: 350px;
+        height: 3px;
+        position: absolute;
+        top: 59%;
+        left: 45%;
+        background: black;
+    }
+    
+    .leftside h4 {
+        font-weight: 400px;
+        word-spacing: 4px;
+    }
+    
+    .leftside h3 {
+        margin-top: 15px;
+        font-size: 70px;
+        margin-bottom: 15px;
+    }
+    
+    button {
+        width: 170px;
+        margin-left: 7px;
+        margin-top: 20px;
+        font-weight: bolder;
+        text-align: center;
+        padding: 5px 25px;
+        cursor: pointer;
+        text-transform: uppercase;
+        border-radius: 20px;
+        border: none;
+        background-color: transparent;
+        box-shadow: 0 0 20px #3498db, 0 0 40px #3498db, 0 0 60px #3498db;
+    }
+        
+    
+    button:hover{
+        box-shadow: 0 0 30px #2980b9, 0 0 60px #2980b9, 0 0 90px #2980b9;
+    }
+    .leftside .socialmedia{
+        display: flex;
+        gap: 20px;
+        padding: 0px 10px;
+    }
+    .leftside .socialmedia a{
+        text-decoration: none;
+            color:rgb(8, 8, 8);
+            transition: color 0.3s ease;
+            font-size: 20px;
+            border-radius: 50%;
+            width: 25px;
+            text-align: center;
+           border: 2px solid rgb(7, 84, 114);
+    }
+    
+    .rightside img {
+        margin-top: 100px;
+      height: 300px;
+      width: 300px;
+      border-radius: 50%;
+      animation: glow 1.5s linear infinite alternate;
+    }
+    
+    @keyframes glow{
+      to {
+        box-shadow: 0px 0px 30px 20px #535FED;
+      }
+    }
+    .aboutme{
+        height: 400px;
+        margin-top: 100px;
+        display: flex;
+        justify-content: space-around;
+    }
+    .aboutme strong{
+        color: orange;
+    }
+    .aboutme img{
+        height: 300px;
+      width: 300px;
+      border-radius: 50%;
+      animation: glow 1.5s linear infinite alternate;
+    }
+    .aboutme .note{
+        width: 50%;
+    }
+    .myservice{
+        margin: 30px 0px;
+        display: flex;
+        justify-content: space-evenly;
+        
+    }
+    .servicebox{
+        color: white;
+        background-color: rgb(34, 81, 100);
+        padding: 0px 10px;
+        border-radius: 20px;
+        box-shadow: 0 0 10px #3498db, 0 0 20px #3498db, 0 0 30px #3498db;
+        border: 2px solid rgb(28, 162, 224);
+        width: 300px;
+    }
+
+    .progressbar{
+        display: flex;
+    }
+    .skilleft {  
+        margin-left: 30px;
+        width: 100%;
+    }
+    
+    .skillname {
+        font-size: 15px;
+    }
+    
+    .container {
+        font-size: 10px;
+        width: 100%;
+        height: 10px;
+        background-color: rgb(20, 20, 20);
+        border-radius: 5px;
+    }
+    
+    .skills {
+        height: 10px;
+        text-align: right;
+        /* Right-align text */
+        color: white;
+        /* White text color */
+    }
+    .java{
+        width: 80%;
+        border-radius: 5px;
+        background-color: #047baa;
+
+    }
+    
+    .html {
+        width: 90%;
+        border-radius: 5px;
+        background-color: #047baa;
+    }
+    /* Green */
+    
+    .css {
+        width: 80%;
+        border-radius: 5px;
+        background-color: #047baa;
+    }
+    /* Blue */
+    
+    .js {
+        width: 45%;
+        border-radius: 5px;
+        background-color: #047baa;
+    }
+    /* Red */
+    
+    .php {
+        width: 30%;
+        border-radius: 5px;
+    background-color: #047baa;
+    }
+    /* Dark Grey */
+  
+    
+    .skillright {
+        width: 100%;
+        display: flex;
+        flex-flow: row;
+        justify-content: space-around;
+
+    }
+    .skillrightfirst{
+        margin-top: 30px;
+        display: flex;
+        flex-flow: column;
+        justify-content: space-around;
+    }
+   .skillrightfirst .container{
+    border: 8px solid blue;
+    box-shadow: 0px 0px 10px blue,0px 0px 20px blue,0px 0px 30px blue;
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    background-color:rgb(51, 50, 50);
+}
+.skillrightfirst .skills{
+    height: 10px;
+    text-align: center;
+    color: rgb(253, 251, 251);
+    font-weight: bolder;
+    font-size: 20px;
+    
+}
+.skillrightfirst .skillname{
+    font-size: 20px;    
+}
+.myproject{
+    margin: 30px 0px;
+    display: flex;
+    justify-content: space-evenly;
+    
+}
+.projectbox{
+    color: white;
+    background-color: rgb(100, 34, 94);
+    padding: 0px 10px;
+    border-radius: 20px;
+    box-shadow: 0 0 10px #db34cd, 0 0 20px #db34cd, 0 0 30px #db34cd;
+    border: 2px solid rgb(224, 28, 224);
+    width: 300px;
+}
+   
+    .footer{
+        margin: 50px 0px;
+        display: flex;
+        justify-content: space-around;
+        
+    }
+    .footerleft{
+        width: 45%;
+    }
+    .footerleft h2{
+        text-align: center;
+    }
+    .footerleft strong{
+        color: rgb(255, 102, 0);
+    }
+    .footerleft .contact{
+        padding: 10px 0px
+    }
+    .footerleft .contact a{
+        text-decoration: none;
+        color: red;
+    }
+    .footerleft .socialmedia{
+        display: flex;
+        gap: 20px;
+        
+    }
+    .footerright{
+        display: flex;
+        flex-flow: column;
+        width: 45%;
+    }
+    .footerright .input{
+        color: white;
+        width: 100%;
+        background-color: black;
+        border-radius: 10px;
+        height: 30px;
+    }
+    .footerright .massage{
+    color: white;
+        width: 100%;
+        background-color: black;
+        border-radius: 10px;
+        height: 100px;
+    }
+    @media only screen and (max-width:974px){
+        img{
+           width: 50%;
+        }
+        .header{
+            background-color: green;
+            text-align: center;
+            flex-flow: column;
+        }
+
+     .headright{
+        font-weight: bold;
+        margin-top: -20px;
+        flex-flow: column;
+     }
+     .leftside{
+        height: 500px;
+     }
+     .leftside h2{
+        display: none;
+     }
+     main
+     {
+        width: 500px;
+        height: 600px;
+     }
+     .aboutme{
+        width: 699px;
+        height: auto;
+     }
+     .myservice{
+      width: 700px;  
+     }
+     .progressbar{
+        width: 700px;
+     }
+     .myproject{
+        width: 700px;
+     }
+     .footer{
+        width: 700px;
+     }
+        }
