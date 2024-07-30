@@ -271,10 +271,17 @@
 .skillrightfirst .skillname{
     font-size: 20px;    
 }
-.myproject{
-    margin: 30px 0px;
+.myprojectfirstbox{
+    padding: 20px 20px;
     display: flex;
     justify-content: space-evenly;
+    
+}
+.myproject{
+
+    margin: 30px 0px;
+    display: flex;
+   flex-flow: column;
     
 }
 .projectbox{
