@@ -135,7 +135,7 @@
     
     .rightside img {
         margin-top: 100px;
-      height: 300px;
+      height: auto;
       width: 300px;
       border-radius: 50%;
       animation: glow 1.5s linear infinite alternate;
@@ -346,44 +346,50 @@
     }
     @media only screen and (max-width:974px){
         img{
-           width: 50%;
+           height:300px;
         }
         .header{
             background-color: green;
             text-align: center;
             flex-flow: column;
+              height: 100px;
         }
 
      .headright{
         font-weight: bold;
         margin-top: -20px;
         flex-flow: column;
+          
      }
      .leftside{
-        height: 500px;
+        width: 1000px;
      }
      .leftside h2{
         display: none;
      }
      main
      {
-        width: 500px;
+        width: 1000px;
         height: 600px;
      }
      .aboutme{
-        width: 699px;
+        width: 966px;
         height: auto;
      }
+          .aboutme img{
+    
+        height: 300px;
+     }
      .myservice{
-      width: 700px;  
+       width: 1000px; 
      }
      .progressbar{
-        width: 700px;
+         width: 1000px;
      }
      .myproject{
-        width: 700px;
+         width: 1000px;
      }
      .footer{
-        width: 700px;
+         width: 1000px;
      }
         }
